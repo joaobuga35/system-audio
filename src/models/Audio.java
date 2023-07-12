@@ -4,7 +4,7 @@ public class Audio {
     private String title;
     private int totalListening;
     private int totalLikes;
-    private double classification;
+    private int classification;
     
     public String getTitle() {
         return title;
@@ -12,22 +12,22 @@ public class Audio {
     public void setTitle(String title) {
         this.title = title;
     }
+    public void listening(){
+        this.totalListening++;
+    }
+    public void likes(){
+        this.totalLikes++;
+    }
     public int getTotalListening() {
         return totalListening;
-    }
-    public void setTotalListening(int totalListening) {
-        this.totalListening = totalListening;
     }
     public int getTotalLikes() {
         return totalLikes;
     }
-    public void setTotalLikes(int totalLikes) {
-        this.totalLikes = totalLikes;
-    }
-    public double getClassification() {
+    public int getClassification() {
         return classification;
     }
-    public void setClassification(double classification) {
+    public void setClassification(int classification) {
         this.classification = classification;
     }
 }
